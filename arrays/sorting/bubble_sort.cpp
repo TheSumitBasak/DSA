@@ -21,11 +21,19 @@ void print_arr(vector<int>& arr) {
 
 void bubble_sort(vector<int>& arr, int size) {
     // Sort code
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if(arr[j] > arr[j+1])
+    bool swapped = false;
+    for (int i = 0; i < size; i++)
+    {
+        swapped = false;
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            if(arr[j] > arr[j+1]) {
                 swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
         }
+        if(!swapped)
+            break;
     }
 }
 
