@@ -10,9 +10,9 @@ struct Node {
         val = v;
         next = nullptr;
     };
-    Node(int v, Node *next) {
+    Node(int v, Node *nxt) {
         val = v;
-        next = next;
+        next = nxt;
     };
     Node() {
         next = nullptr;

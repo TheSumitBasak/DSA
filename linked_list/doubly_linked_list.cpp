@@ -12,10 +12,10 @@ struct Node {
         next = nullptr;
         prev = nullptr;
     };
-    Node(int v, Node *next, Node *prev) {
+    Node(int v, Node *nxt, Node *prv) {
         val = v;
-        next = next;
-        prev = prev;
+        next = nxt;
+        prev = prv;
     };
     Node() {
         next = nullptr;
